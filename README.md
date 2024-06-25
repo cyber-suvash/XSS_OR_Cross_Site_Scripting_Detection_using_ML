@@ -1,1 +1,2 @@
-# XSS Stand for Cross Site Scripting <b> This Project Protential to detect XSS using Machine Learning ..
+# XSS Stand for Cross Site Scripting Vulnerability
+This Project Protential to detect XSS using Machine Learning ..
