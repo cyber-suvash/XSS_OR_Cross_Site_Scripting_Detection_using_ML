@@ -4,6 +4,7 @@ import streamlit as st
 import numpy as np
 import pickle
 from urllib.parse import unquote
+import gensim
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
 from nltk.tokenize import word_tokenize
 
