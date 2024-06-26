@@ -1,9 +1,10 @@
 streamlit
+scipy==1.7.3
+numpy==1.21.2
 pandas
 scikit-learn
 matplotlib
 seaborn
-numpy
 gensim
 nltk
 python-Levenshtein
