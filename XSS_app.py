@@ -11,7 +11,7 @@ from nltk.tokenize import word_tokenize
 st.set_page_config(page_title="XSS_Detection",page_icon="💠")
 
 # Load your trained model
-model = pickle.load(open('D:/programms/python/Jupyter/A_XSS/RandomForestClassifier_MODEL/RandomForestClassifier', 'rb'))
+model = pickle.load(open('RandomForestClassifier_MODEL/RandomForestClassifier', 'rb'))
 
 def extract_features(line):
     line_decode = unquote(line).replace(" ", "").lower()
@@ -60,7 +60,7 @@ def set_background_image(image_path):
         )
 
 # Set the background image
-set_background_image("D:\programms\python\Jupyter\A_XSS\Background_Image\pr.jpg")
+set_background_image("Background_Image\pr.jpg")
 
 # Page Title and Description
 st.title("XSS Detection with Machine Learning")
