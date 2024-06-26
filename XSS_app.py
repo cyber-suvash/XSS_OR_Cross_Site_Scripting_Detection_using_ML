@@ -1,4 +1,4 @@
-from scipy.linalg import triu
+
 import base64
 import streamlit as st
 import numpy as np
