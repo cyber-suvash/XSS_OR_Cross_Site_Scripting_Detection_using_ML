@@ -1,10 +1,11 @@
 streamlit
 click==7.1.2
-gensim==4.1.0
 joblib==1.0.1
 nltk==3.5
-numpy>=1.21.6
 pandas==1.2.3
+python_version >=3.6,<4
+gensim>=4.0.0,<5.0.0
+numpy>=1.20.0,<2.0.0
 python-dateutil==2.9.0.post0
 python-Levenshtein==0.25.1
 pytz==2021.1
