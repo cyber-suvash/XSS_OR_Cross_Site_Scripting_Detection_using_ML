@@ -1,6 +1,6 @@
 streamlit
 click==7.1.2
-gensim==4.0.1
+gensim==4.1.0
 joblib==1.0.1
 nltk==3.5
 numpy>=1.21.6
