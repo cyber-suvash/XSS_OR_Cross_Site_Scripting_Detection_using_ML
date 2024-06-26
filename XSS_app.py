@@ -59,7 +59,7 @@ def set_background_image(image_path):
         )
 
 # Set the background image
-set_background_image("Background_Image\pr.jpg")
+set_background_image("Background_Image/pr.jpg")
 
 # Page Title and Description
 st.title("XSS Detection with Machine Learning")
