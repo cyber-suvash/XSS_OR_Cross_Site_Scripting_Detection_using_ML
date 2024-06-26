@@ -12,7 +12,7 @@ from nltk.tokenize import word_tokenize
 st.set_page_config(page_title="XSS_Detection",page_icon="💠")
 
 # Load your trained model
-model = pickle.load(open('RandomForestClassifier_MODEL/RandomForestClassifier', 'rb'))
+model = pickle.load(open('RandomForestClassifier_MODEL/RandomForestClassifier.sa', 'rb'))
 
 def extract_features(line):
     line_decode = unquote(line).replace(" ", "").lower()
