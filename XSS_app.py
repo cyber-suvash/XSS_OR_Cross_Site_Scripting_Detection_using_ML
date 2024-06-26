@@ -26,7 +26,7 @@ def extract_features(line):
     features.append(len(line_decode))  # length of the string
     return np.array(features)
 
-def getVect(text):
+def getVectorise(text):
     tagged_data = [TaggedDocument(words=word_tokenize(_d.lower()), tags=[str(i)]) for i, _d in enumerate(text)]
 
     max_epochs = 25
@@ -73,7 +73,7 @@ st.write("Paste or type the text you want to analyze for XSS threats in the box 
 # Prediction Button
 if st.button("Detect XSS"):
     if inputXSS:
-        Xnew = getVect([inputXSS])  # Assuming getVect takes a list as input
+        Xnew = getVectorise([inputXSS])  # Assuming getVect takes a list as input
         ynew = model.predict(Xnew)
 
         if ynew[0] == 1:
