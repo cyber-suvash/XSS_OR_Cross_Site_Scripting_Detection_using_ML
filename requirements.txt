@@ -1,6 +1,6 @@
 streamlit
 scipy==1.14.0
-numpy==1.21.2
+numpy>=1.23.5,<2.3
 pandas
 scikit-learn
 matplotlib
