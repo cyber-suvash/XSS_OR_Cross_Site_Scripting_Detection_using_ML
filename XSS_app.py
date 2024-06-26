@@ -1,4 +1,4 @@
-
+##########
 import base64
 import streamlit as st
 import numpy as np
@@ -7,7 +7,6 @@ from urllib.parse import unquote
 import gensim
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
 from nltk.tokenize import word_tokenize
-
 st.set_page_config(page_title="XSS_Detection",page_icon="💠")
 
 # Load your trained model
