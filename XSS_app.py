@@ -5,6 +5,8 @@ import numpy as np
 import pickle
 from urllib.parse import unquote
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
+import nltk
+nltk.download('punkt')
 from nltk.tokenize import word_tokenize
 
 st.set_page_config(page_title="XSS_Detection",page_icon="💠")
