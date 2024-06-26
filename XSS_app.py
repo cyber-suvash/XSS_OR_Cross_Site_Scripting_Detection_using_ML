@@ -1,12 +1,12 @@
-##########
+import streamlit as st
 import base64
 import streamlit as st
 import numpy as np
 import pickle
 from urllib.parse import unquote
-import gensim
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
 from nltk.tokenize import word_tokenize
+
 st.set_page_config(page_title="XSS_Detection",page_icon="💠")
 
 # Load your trained model
@@ -14,7 +14,7 @@ model = pickle.load(open('RandomForestClassifier_MODEL/RandomForestClassifier', 
 
 def extract_features(line):
     line_decode = unquote(line).replace(" ", "").lower()
-    features = [line_decode.count(tag) for tag in ['<link', '<object', '<form', '<embed', '<ilayer', '<layer', '<style', 
+    features = [line_decode.count(tag) for tag in ['<link', '<object','inurl:.php?id=', '<form', '<embed', 'id=\d+&','<ilayer', '<layer', '<style', 
                                                     '<applet', '<meta', '<img', '<iframe', '<input', '<body', '<video', '<button', 
                                                     '<math', '<picture', '<map', '<svg', '<div', '<a', '<details', '<frameset', 
                                                     '<table', '<comment', '<base', '<image', 'exec', 'fromcharcode', 'eval', 
@@ -25,7 +25,7 @@ def extract_features(line):
     features.append(len(line_decode))  # length of the string
     return np.array(features)
 
-def getVectorise(text):
+def getVect(text):
     tagged_data = [TaggedDocument(words=word_tokenize(_d.lower()), tags=[str(i)]) for i, _d in enumerate(text)]
 
     max_epochs = 25
@@ -72,7 +72,7 @@ st.write("Paste or type the text you want to analyze for XSS threats in the box 
 # Prediction Button
 if st.button("Detect XSS"):
     if inputXSS:
-        Xnew = getVectorise([inputXSS])  # Assuming getVect takes a list as input
+        Xnew = getVect([inputXSS])  # Assuming getVect takes a list as input
         ynew = model.predict(Xnew)
 
         if ynew[0] == 1:
