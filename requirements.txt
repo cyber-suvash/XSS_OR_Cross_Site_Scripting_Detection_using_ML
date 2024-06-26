@@ -5,7 +5,7 @@ joblib==1.0.1
 nltk==3.5
 numpy>=1.21.6
 pandas==1.2.3
-python-dev
+python_version == "3.7"
 python-Levenshtein==0.25.1
 pytz==2021.1
 regex==2021.3.17
