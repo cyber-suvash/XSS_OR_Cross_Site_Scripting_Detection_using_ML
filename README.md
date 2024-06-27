@@ -1,4 +1,4 @@
-# XSS Stand for Cross Site Scripting Vulnerability
+# XSS Stands for Cross Site Scripting Vulnerability
 
 Cross-site Scripting (XSS) is a client-side code injection attack. The attacker aims to execute malicious scripts in a web browser of the victim by including malicious code in a legitimate web page or web application. 
 
