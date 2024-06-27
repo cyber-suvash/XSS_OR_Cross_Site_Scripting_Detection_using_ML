@@ -8,3 +8,10 @@ This Project Protential to detect XSS using Machine Learning ..
 <br>
  You can check out Live link 🔗 👇
  https://cross-site-scripting-detection.streamlit.app/
+ <br>
+ !! here some results of the Model Predictions...
+ ![possitive](https://github.com/cyber-suvash/XSS_OR_Cross_Site_Scripting_Detection_using_Machine_Learning/assets/129322686/fe6051ca-b693-4134-85a8-fe090c1db2a4)
+ <br>
+ ![negetive](https://github.com/cyber-suvash/XSS_OR_Cross_Site_Scripting_Detection_using_Machine_Learning/assets/129322686/6175e909-150c-4e58-b481-e6b6ac57bd3b)
+
+
