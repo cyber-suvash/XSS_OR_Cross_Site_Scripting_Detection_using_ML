@@ -1,6 +1,6 @@
 import streamlit as st
 import base64
-from scipy.linalg import triu
+# from scipy.linalg import triu
 import numpy as np
 import pickle
 from urllib.parse import unquote
