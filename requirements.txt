@@ -1,4 +1,4 @@
-/* streamlit
+# streamlit
 #scipy==1.11.0
 #numpy>=1.23.5,<2.3
 #pandas
@@ -7,7 +7,7 @@
 #seaborn
 #gensim
 #nltk
-#python-Levenshtein */
+#python-Levenshtein 
 
 streamlit>=1.38.0,<2.0.0
 scipy>=1.10.0,<2.0.0
